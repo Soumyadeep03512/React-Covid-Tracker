@@ -1,0 +1,35 @@
+import React from "react";
+import { Map, InfoWindow, Marker, GoogleApiWrapper } from "google-maps-react";
+
+export class MapContainer extends React.Component {
+  render() {
+    const containerStyle = {
+      width: "50%",
+      height: "50%",
+      marginLeft: "100px"
+    };
+    return (
+      <Map
+        google={this.props.google}
+        zoom={8}
+        containerStyle={containerStyle}
+        initialCenter={{
+          lat: 22.565571,
+          lng: 88.370209
+        }}
+      >
+        <Marker
+          onClick={this.onMarkerClick}
+          name={"Dolores park"}
+          position={{ lat: 22.565571, lng: 88.370209 }}
+        />
+
+        <InfoWindow onClose={this.onInfoWindowClose}></InfoWindow>
+      </Map>
+    );
+  }
+}
+
+export default GoogleApiWrapper({
+  apiKey: "AIzaSyBcU7quVlznKWYRVJwJLJFICzFvXS2WeGI"
+})(MapContainer);

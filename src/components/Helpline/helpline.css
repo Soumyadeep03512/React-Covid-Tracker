@@ -1,0 +1,15 @@
+.helpline{
+    margin-top: 70px;
+  display: flex;
+  justify-content: space-around ;
+}
+.helpheading{
+    list-style: none;
+    margin-bottom: 100px;
+   
+}
+.helpheading li {
+  color: #b4b7a8;
+  font-size: 20px;
+  margin-top: 30px;
+}

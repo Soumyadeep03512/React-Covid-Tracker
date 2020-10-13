@@ -1,0 +1,28 @@
+.navbarul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin-top: 100px;
+}
+
+.link {
+  text-decoration: none;
+  color: #dfdede;
+  font-size: 30px;
+}
+
+.navbarul li {
+  font-size: 22px;
+  position: relative;
+  padding: 10px;
+}
+
+.activemenu {
+  border-bottom: 1px solid #dfdede;
+}
+
+@media screen and (max-width: 768px) {
+  .navbarul {
+    margin-top: 200px;
+  }
+}
